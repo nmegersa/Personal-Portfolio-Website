@@ -1,7 +1,6 @@
 import "./App.css"
 import { LoadingScreen } from "./Components/LoadingScreen.jsx";
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./index.css"
 import { useState } from "react";
 import { Navbar } from "./Components/Navbar.jsx";
