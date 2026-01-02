@@ -12,7 +12,7 @@ export const Home = () => {
                     Hello, I'm Nathan Megersa
                 </h1>
 
-                <p>
+                <p className="mt-6">
                     I’m a Computer Science sophomore at the University of Colorado Boulder
                     (Go Buffs!) with a Computer Engineering minor. I’m focused on strong software
                     engineering fundamentals—data structures, algorithms, object-oriented programming,
