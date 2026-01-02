@@ -85,7 +85,7 @@ export const Projects = () => {
                             <a href="https://github.com/nmegersa/Personal-Portfolio-Website" className="blue-400 hover:text-blue-300 transition-colors my-4">
                                 View Project Repo →
                             </a>
-                            <a href="#" className="blue-400 hover:text-blue-300 transition-colors my-4">
+                            <a href="https://nathan-portfolio-smoky.vercel.app" className="blue-400 hover:text-blue-300 transition-colors my-4">
                                 View Demo →
                             </a>
                         </div>
