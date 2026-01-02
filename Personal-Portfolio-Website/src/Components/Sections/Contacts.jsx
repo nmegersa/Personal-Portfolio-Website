@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { RevealOnScroll } from "./RevealOnScroll";
 import emailjs from "@emailjs/browser";
+import githubLogo from "./GitHubLogo.png";
+import linkedinLogo from "./LinkedIn_logo_initials.png";
+
 
 export const Contacts = () => {
     const [formData, setFormData] = useState({
@@ -41,7 +44,44 @@ export const Contacts = () => {
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Get In Touch
                     </h2>
+                    <div className="space-y-6 p-6 rounded-xl border-white/10 border border-white/10 hover:-translate-y-1 hover:border-blue-500/30
+                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+                        <h3 className="text-xl font-bold mb-4 text-center">Social Links</h3>
 
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
+                            <div className="flex flex-col items-center gap-3 text-center">
+                                <h4 className="font-semibold">LinkedIn</h4>
+                                <a
+                                    href="https://www.linkedin.com/in/nathan-megersa-aco/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex"
+                                >
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="LinkedIn"
+                                        className="h-14 w-14 object-contain rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                                    />
+                                </a>
+                            </div>
+                            <div className="flex flex-col items-center gap-3 text-center">
+                                <h4 className="font-semibold">GitHub</h4>
+                                <a
+                                    href="https://github.com/nmegersa"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex"
+                                >
+                                    <img
+                                        src={githubLogo}
+                                        alt="GitHub"
+                                        className="h-14 w-14 object-contain rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         {/* hidden field so EmailJS gets to_name */}
                         <input type="hidden" name="to_name" value={formData.to_name} />

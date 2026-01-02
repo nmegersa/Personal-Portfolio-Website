@@ -14,7 +14,8 @@ export const About = () => {
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center ">
                         About Me
                     </h2>
-                    <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="glass rounded-xl p-8 p-6 rounded-xl border-white/10 border border-white/10 hover:-translate-y-1 hover:border-blue-500/30
+                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
                         <p className="text-gray-300 mb-6">
                             I’m a passionate software engineer with experience building backend, full-stack,
                             and front-end applications, eager to create innovative, real-world solutions
