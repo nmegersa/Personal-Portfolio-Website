@@ -129,7 +129,8 @@ export const SongOfTheDay = () => {
                     {!track && !error && <p className="text-gray-400">Loading today’s song…</p>}
 
                     {track && (
-                        <div className="p-6 rounded-xl border border-white/10 bg-white/5">
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30
+                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.1)] transition-all">
                             <div className="flex flex-col items-center gap-5">
                                 <div
                                     className={`w-48 h-48 rounded-full overflow-hidden border border-white/10 shadow-lg
