@@ -38,20 +38,17 @@ export const Contacts = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-16 px-4"
+      className="min-h-screen flex items-center justify-center py-20 px-4"
     >
       <RevealOnScroll>
-        <div className="w-full max-w-md sm:max-w-lg">
+       <div className="px-4 w-full sm:w-150 sm:max-w-none">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
-
-          {/* Social Links Card */}
           <div className="space-y-6 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]">
             <h3 className="text-xl font-bold mb-4 text-center">Social Links</h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
-              {/* LinkedIn */}
               <div className="flex flex-col items-center gap-3 text-center">
                 <h4 className="font-semibold">LinkedIn</h4>
                 <a
@@ -68,7 +65,6 @@ export const Contacts = () => {
                 </a>
               </div>
 
-              {/* GitHub */}
               <div className="flex flex-col items-center gap-3 text-center">
                 <h4 className="font-semibold">GitHub</h4>
                 <a
@@ -87,10 +83,8 @@ export const Contacts = () => {
             </div>
           </div>
 
-          {/* Contact Form Card */}
           <div className="mt-6 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
             <form className="space-y-6" onSubmit={handleSubmit}>
-              {/* hidden field so EmailJS gets to_name */}
               <input type="hidden" name="to_name" value={formData.to_name} />
 
               <div className="relative">
