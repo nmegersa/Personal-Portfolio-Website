@@ -82,7 +82,7 @@ export const Contacts = () => {
                         </div>
 
                     </div>
-                    <form className="space-y-6" onSubmit={handleSubmit}>
+                    <form className="mt-6 space-y-6" onSubmit={handleSubmit}>
                         {/* hidden field so EmailJS gets to_name */}
                         <input type="hidden" name="to_name" value={formData.to_name} />
 
